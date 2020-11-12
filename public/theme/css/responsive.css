@@ -1,0 +1,75 @@
+@media (max-width:767px){
+    .form_section .form-submit {
+        margin: 15px 0px 0px 20px !important;
+    }
+    .home_product ul li, .inventor ul li {
+        padding-top: 0px;
+        
+    }
+    .home_product h4, .loan_dropdown h4, .inventor h4, .contact h4 {
+        line-height: 1.2;
+        font-size: 14px;
+    }
+    .inventor_social h3, .inventor_social span {
+        font-size: 12px;
+    }
+    #cont_follow i {
+        font-size: 20px !important;
+    }
+
+}
+
+
+
+/*----------------Arif start---------------------------------------*/
+/*----------------Arif start---------------------------------------*/
+
+
+#hidden_div{
+    height:18px;
+    width: 100%;
+}
+#navigation>ul>li>a {
+    padding: 0px 10px;
+}
+#service {
+ width: 99% !important;
+} 
+ 
+
+#slider .owl-prev {
+    position: absolute !important;
+    top: 88% !important;
+    left: 46.5% !important;
+}
+
+#slider .owl-next{
+    position: absolute !important;
+    top: 88% !important;
+    right: 46.5% !important;  
+}
+.owl-pagination{
+    display:none;
+}
+@media (min-width:769px) and (max-width:992px){
+#slider .owl-prev {
+left: 45% !important;
+}
+#slider .owl-next{
+right: 45% !important;  
+} 
+}
+
+.pinside40 p{
+    color:#000 !important;
+}
+
+#about_dropdown a, #loan_dropdown a, #deposit_dropdown a, #contact a{
+color: #000 !important;
+}        
+
+
+
+
+
+
