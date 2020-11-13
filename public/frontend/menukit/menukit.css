@@ -316,11 +316,11 @@ display: flex;
     padding: 5px;
 }
 
-@media all and (min-width: 992px) {
-    .menuStyle {
-        display: flex;
-        align-items: center;
+/*@media (min-width: 768px) {*/
+/*    .menuStyle {*/
+/*        display: flex;*/
+/*        align-items: center;*/
 
-    }
-}
+/*    }*/
+/*}*/
 

@@ -45,62 +45,15 @@
 {{--    <script src="{{ asset('frontend/menukit/bootstrap/bootstrap.bundle.min.js') }}" type="text/javascript"></script>--}}
 
     <!-- Menukit CSS JS - add this style to your project -->
-    <link href="{{ asset('frontend/menukit/menukit.css') }}" rel="stylesheet" type="text/css"/>
-    <script src="{{ asset('frontend/menukit/menukit.js') }}"></script>
+{{--    <link href="{{ asset('frontend/menukit/menukit.css') }}" rel="stylesheet" type="text/css"/>--}}
+{{--    <script src="{{ asset('frontend/menukit/menukit.js') }}"></script>--}}
 </head>
 
 
 <body>
-    <div class="collapse searchbar" id="searchbar">
-        <div class="search-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-            </span> </div>
-                        <!-- /input-group -->
-                    </div>
-                    <!-- /.col-lg-6 -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-<section class="nav-fixed">
-    <div class="top-bar">
-        <!-- top-bar -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6 col-6 d-none d-xl-block d-lg-block">
-                    <p class="mail-text"> <span> <i class="fa fa-phone"></i> </span>+88 09609 200555</p>
-                </div>
-                <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
-                    <div class="top-nav">
-                        <span class="top-text"><a href="/calculator">EMI Calculator</a></span>
-                        <span class="top-text"><a href="/news-bulletin">News Bulletin</a></span>
-                        <span class="top-text"><a href="/downloads">Download</a></span>
-                        <span class="top-text"><a href="/complain-cell">Complain Cell</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.top-bar -->
 
 
 
-
-
-
-
-
-
-
-
-</section>
 
 
    @include('layouts.default.navigation_new')

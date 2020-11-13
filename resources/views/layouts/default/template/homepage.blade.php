@@ -29,7 +29,7 @@
 }
 
 #lightbox{
-    padding-top:10%;
+    padding-top:15%;
     background: #0606067a;
 }
 .carousel-inner {
@@ -46,7 +46,7 @@
 }
 @media (max-width: 768px) {
     .owl-item img {
-        height: 150px;
+        height: 200px;
     }
 }
 </style>

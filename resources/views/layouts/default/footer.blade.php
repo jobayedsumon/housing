@@ -351,6 +351,7 @@ display: block;
                 <div class="widget-footer mt40">
                     <!-- widget footer -->
                     <ul class="listnone">
+                        <li><a href="/calculator">EMI Calculator</a></li>
                         <li><a href="/news-bulletin">News Bulletin</a></li>
                         <li><a href="/downloads">Download</a></li>
                         <li><a href="/complain-cell">Complain Cell</a></li>

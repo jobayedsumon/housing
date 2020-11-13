@@ -22,7 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fefd539-2176-4b64-b5a6-801e06d2c531" name="Default Changelist" comment="Working and updating" />
+    <list default="true" id="0fefd539-2176-4b64-b5a6-801e06d2c531" name="Default Changelist" comment="Working and updating">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/menukit/menukit.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/menukit/menukit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/default/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/default/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default/navigation_new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/default/navigation_new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default/template/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/default/template/homepage.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +232,8 @@
       <workItem from="1604897681463" duration="16400000" />
       <workItem from="1604984534875" duration="643000" />
       <workItem from="1605082047152" duration="12186000" />
-      <workItem from="1605162449347" duration="9705000" />
+      <workItem from="1605162449347" duration="11082000" />
+      <workItem from="1605287215277" duration="7274000" />
     </task>
     <task id="LOCAL-00001" summary="working on 1">
       <created>1603888804552</created>
@@ -323,12 +333,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1604917724441" />
-    <state x="417" y="193" width="670" height="678" key="search.everywhere.popup" timestamp="1605179243981">
+    <state x="417" y="193" width="670" height="678" key="search.everywhere.popup" timestamp="1605302123288">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="417" y="193" width="670" height="678" key="search.everywhere.popup/0.0.1440.900/-1920.-138.1920.1080@0.0.1440.900" timestamp="1605165367313" />
     <state x="417" y="193" width="670" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600504576331" />
-    <state x="417" y="193" width="670" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605179243981" />
+    <state x="417" y="193" width="670" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605302123288" />
     <state x="463" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1600103947338" />
     <state x="417" y="193" width="670" height="678" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1604561921074" />
     <state x="417" y="199" width="670" height="620" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1600764194314" />
