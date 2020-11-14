@@ -52,10 +52,8 @@
 
 <body>
 
+@include('layouts.default.navigation_new')
 
 
-
-
-   @include('layouts.default.navigation_new')
 
 

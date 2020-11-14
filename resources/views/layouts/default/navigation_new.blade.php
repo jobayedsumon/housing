@@ -143,6 +143,8 @@
         z-index: 9999;
         background-color: inherit;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .navbar, .navbar-nav li a, .menuStyle li a {
@@ -172,6 +174,25 @@
 
 
 <div class="container-fluid stickyMenu">
+    <div class="top-bar" style="width: 100%">
+        <!-- top-bar -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6 col-6 d-none d-xl-block d-lg-block">
+                    <p class="mail-text"> <span> <i class="fa fa-phone"></i> </span>+88 09609 200555</p>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
+                    <div class="top-nav">
+                        <span class="top-text"><a href="/calculator">EMI Calculator</a></span>
+                        <span class="top-text"><a href="/news-bulletin">News Bulletin</a></span>
+                        <span class="top-text"><a href="/downloads">Download</a></span>
+                        <span class="top-text"><a href="/webmail">Web Mail</a></span>
+                        <span class="top-text"><a href="/complain-cell">Complain Cell</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">	<span class="sr-only">Toggle navigation</span>
