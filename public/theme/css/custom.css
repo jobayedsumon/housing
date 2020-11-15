@@ -1202,7 +1202,7 @@ a.search-btn,a.search-btn:active {
     display: block;
     padding: 3px 20px;
     clear: both;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.428571429;
     color: black;
     white-space: normal;

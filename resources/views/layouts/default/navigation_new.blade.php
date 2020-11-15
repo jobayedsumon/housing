@@ -186,7 +186,6 @@
                         <span class="top-text"><a href="/calculator">EMI Calculator</a></span>
                         <span class="top-text"><a href="/news-bulletin">News Bulletin</a></span>
                         <span class="top-text"><a href="/downloads">Download</a></span>
-                        <span class="top-text"><a href="/webmail">Web Mail</a></span>
                         <span class="top-text"><a href="/complain-cell">Complain Cell</a></span>
                     </div>
                 </div>

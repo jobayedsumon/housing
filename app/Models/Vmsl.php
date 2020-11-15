@@ -30,7 +30,7 @@ class Vmsl extends Model {
     return $value;
   }
   public static function getAllNews(){
-    $value = DB::table('vmsl_news_events')->where('status', 1)->get();
+    $value = DB::table('vmsl_news_events')->where('status', 1)->orderBy('date_time', 'DESC')->get();
     return $value;
   }
 

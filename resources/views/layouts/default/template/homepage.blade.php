@@ -2,13 +2,17 @@
 
 @section('title', 'Home')
 
-<div class="slider" id="slider">
-	@foreach($slider as $data)
-        <a href="{{ $data->button_link }}">
-            <img src="{{ asset('slider/'.$data->image) }}" alt="{{ $data->sub_title }}" class="">
-        </a>
-	@endforeach
-</div>
+
+    <div class="slider" id="slider">
+        @foreach($slider as $data)
+            <a href="{{ $data->button_link }}">
+                <img src="{{ asset('slider/'.$data->image) }}" alt="{{ $data->sub_title }}" class="">
+            </a>
+        @endforeach
+    </div>
+
+
+
 
 
 
