@@ -70,7 +70,7 @@
 					 
 										 </div> 
 										 <div class="col-md-2">
-										 	
+										 	<a href="#" data-toggle="tooltip" placement="left" class="tips" title="Image Size 600*400"><i class="icon-question2"></i></a>
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
@@ -88,7 +88,7 @@
 					 
 										 </div> 
 										 <div class="col-md-2">
-										 	
+										 	<a href="#" data-toggle="tooltip" placement="left" class="tips" title="Image Size 1900*480"><i class="icon-question2"></i></a>
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >

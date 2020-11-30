@@ -1,7 +1,6 @@
 // Template slider jQuery script
 
 $(document).on('ready', function() {
-    "use strict";
     $(".slider").owlCarousel({
         navigation: true, // Show next and prev buttons
         slideSpeed: 3000,
@@ -12,7 +11,7 @@ $(document).on('ready', function() {
         navigation: true,
         navigationText: ["<i class='fa fa-caret-left'></i>","<i class='fa fa-caret-right'></i>"],
         addClassActive: true,
-        
+
     });
 
     $("#bod_slider").owlCarousel({
@@ -24,7 +23,7 @@ $(document).on('ready', function() {
         autoPlay: true,
         navigation: false,
         addClassActive: true,
-        
+
     });
 
 

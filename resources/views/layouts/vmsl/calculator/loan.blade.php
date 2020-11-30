@@ -55,12 +55,12 @@ hr{clear: both;}
                                         <span>Loan Amount is </span>
                                         <strong>
                                             <span class="pull-right" id="la_value">30000</span></strong>
-                                        <input type="text" data-slider="true" value="30000" data-slider-range="100000,5000000" data-slider-step="100000" data-slider-snap="true" id="la">
+                                        <input type="text" data-slider="true" value="30000" data-slider-range="100000,200000000" data-slider-step="100000" data-slider-snap="true" id="la">
                                         <hr>
                                         <span>No. of Month is <strong>
                                             <span class="pull-right"  id="nm_value">30</span> </strong>
                                         </span>
-                                        <input type="text" data-slider="true" value="30" data-slider-range="12,120" data-slider-step="1" data-slider-snap="true" id="nm">
+                                        <input type="text" data-slider="true" value="30" data-slider-range="12,240" data-slider-step="1" data-slider-snap="true" id="nm">
                                         <hr>
                                         <span>Rate of Interest [ROI] is <strong><span class="pull-right"  id="roi_value">10</span>
                                         </strong>
@@ -76,7 +76,7 @@ hr{clear: both;}
                                                 <h2 id='emi' class="pull-right"></h2>
                                             </div>
                                         </div>
-                                 
+
                                     </div>
                                 </div>
                             </div>

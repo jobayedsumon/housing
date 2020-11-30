@@ -137,7 +137,7 @@ display: block;
                             <option value="-1">Select</option>
 
                                 <?php foreach(Helper::getLoanCategory() as $l):?>
-                                <option value="{{ $l->id }}" >{{$l->name}}</option>
+                                <option value="{{ $l->name }}" >{{$l->name}}</option>
                                 <?php endforeach; ?>
 
                         </select>

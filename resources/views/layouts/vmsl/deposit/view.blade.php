@@ -36,10 +36,10 @@
 @else
 
     @foreach( $allData as $data)
-        @if($data->about)
+        @if($data->image)
             <style>
                 .page-header{
-                    background: url(/uploads/images/{{$data->about}}) no-repeat;
+                    background: url(/uploads/images/{{$data->image}}) no-repeat;
                     padding: 131px 0px 80px;
                     background-size: cover;
                 }

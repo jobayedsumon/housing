@@ -15,8 +15,8 @@
 
 
 <div class="col-md-12">
-						<fieldset><legend> career</legend>
-				{!! Form::hidden('id', $row['id']) !!}					
+						<fieldset><legend> Career Request</legend>
+									
 									  <div class="form-group row  " >
 										<label for="Name" class=" control-label col-md-4 text-left"> Name </label>
 										<div class="col-md-6">
@@ -28,20 +28,20 @@
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Father's Name" class=" control-label col-md-4 text-left"> Father's Name </label>
+										<label for="Father Name" class=" control-label col-md-4 text-left"> Father Name </label>
 										<div class="col-md-6">
-										  <textarea name='father_name' rows='5' id='father_name' class='form-control form-control-sm '  
-				           >{{ $row['father_name'] }}</textarea> 
+										  <input  type='text' name='father_name' id='father_name' value='{{ $row['father_name'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Mother's Name" class=" control-label col-md-4 text-left"> Mother's Name </label>
+										<label for="Mother Name" class=" control-label col-md-4 text-left"> Mother Name </label>
 										<div class="col-md-6">
-										  <textarea name='mother_name' rows='5' id='mother_name' class='form-control form-control-sm '  
-				           >{{ $row['mother_name'] }}</textarea> 
+										  <input  type='text' name='mother_name' id='mother_name' value='{{ $row['mother_name'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -50,13 +50,8 @@
 									  <div class="form-group row  " >
 										<label for="Date Of Birth" class=" control-label col-md-4 text-left"> Date Of Birth </label>
 										<div class="col-md-6">
-										  
-				<div class="input-group input-group-sm m-b" style="width:150px !important;">
-					{!! Form::text('date_of_birth', $row['date_of_birth'],array('class'=>'form-control form-control-sm date')) !!}
-					<div class="input-group-append">
-					 	<div class="input-group-text"><i class="fa fa-calendar"></i></span></div>
-					 </div>
-				</div> 
+										  <input  type='text' name='date_of_birth' id='date_of_birth' value='{{ $row['date_of_birth'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -65,18 +60,18 @@
 									  <div class="form-group row  " >
 										<label for="Nationality" class=" control-label col-md-4 text-left"> Nationality </label>
 										<div class="col-md-6">
-										  <textarea name='nationality' rows='5' id='nationality' class='form-control form-control-sm '  
-				           >{{ $row['nationality'] }}</textarea> 
+										  <input  type='text' name='nationality' id='nationality' value='{{ $row['nationality'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="NID" class=" control-label col-md-4 text-left"> NID </label>
+										<label for="Nid" class=" control-label col-md-4 text-left"> Nid </label>
 										<div class="col-md-6">
-										  <textarea name='nid' rows='5' id='nid' class='form-control form-control-sm '  
-				           >{{ $row['nid'] }}</textarea> 
+										  <input  type='text' name='nid' id='nid' value='{{ $row['nid'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -85,8 +80,38 @@
 									  <div class="form-group row  " >
 										<label for="Blood Group" class=" control-label col-md-4 text-left"> Blood Group </label>
 										<div class="col-md-6">
-										  <textarea name='blood_group' rows='5' id='blood_group' class='form-control form-control-sm '  
-				           >{{ $row['blood_group'] }}</textarea> 
+										  <input  type='text' name='blood_group' id='blood_group' value='{{ $row['blood_group'] }}' 
+						     class='form-control form-control-sm ' /> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Training" class=" control-label col-md-4 text-left"> Training </label>
+										<div class="col-md-6">
+										  <input  type='text' name='tanning' id='tanning' value='{{ $row['tanning'] }}' 
+						     class='form-control form-control-sm ' /> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Mailing Address" class=" control-label col-md-4 text-left"> Mailing Address </label>
+										<div class="col-md-6">
+										  <textarea name='mailing_address' rows='5' id='mailing_address' class='form-control form-control-sm '  
+				           >{{ $row['mailing_address'] }}</textarea> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Permanent Address" class=" control-label col-md-4 text-left"> Permanent Address </label>
+										<div class="col-md-6">
+										  <textarea name='permanent_address' rows='5' id='permanent_address' class='form-control form-control-sm '  
+				           >{{ $row['permanent_address'] }}</textarea> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -95,8 +120,8 @@
 									  <div class="form-group row  " >
 										<label for="Religion" class=" control-label col-md-4 text-left"> Religion </label>
 										<div class="col-md-6">
-										  <textarea name='religion' rows='5' id='religion' class='form-control form-control-sm '  
-				           >{{ $row['religion'] }}</textarea> 
+										  <input  type='text' name='religion' id='religion' value='{{ $row['religion'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -105,35 +130,65 @@
 									  <div class="form-group row  " >
 										<label for="Marital Status" class=" control-label col-md-4 text-left"> Marital Status </label>
 										<div class="col-md-6">
-										  <textarea name='marital_status' rows='5' id='marital_status' class='form-control form-control-sm '  
-				           >{{ $row['marital_status'] }}</textarea> 
+										  <input  type='text' name='marital_status' id='marital_status' value='{{ $row['marital_status'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Contact No" class=" control-label col-md-4 text-left"> Contact No </label>
+										<label for="Hobbies" class=" control-label col-md-4 text-left"> Hobbies </label>
 										<div class="col-md-6">
-										  <textarea name='mobile' rows='5' id='mobile' class='form-control form-control-sm '  
-				           >{{ $row['mobile'] }}</textarea> 
+										  <textarea name='hobbies' rows='5' id='hobbies' class='form-control form-control-sm '  
+				           >{{ $row['hobbies'] }}</textarea> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Email" class=" control-label col-md-4 text-left"> Email </label>
+										<label for="Extra Curricular Activities" class=" control-label col-md-4 text-left"> Extra Curricular Activities </label>
 										<div class="col-md-6">
-										  <textarea name='email' rows='5' id='email' class='form-control form-control-sm '  
-				           >{{ $row['email'] }}</textarea> 
+										  <textarea name='extra_curricular_activities' rows='5' id='extra_curricular_activities' class='form-control form-control-sm '  
+				           >{{ $row['extra_curricular_activities'] }}</textarea> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="SSC" class=" control-label col-md-4 text-left"> SSC </label>
+										<label for="Langauge Proficiency" class=" control-label col-md-4 text-left"> Langauge Proficiency </label>
+										<div class="col-md-6">
+										  <textarea name='langauge_proficiency' rows='5' id='langauge_proficiency' class='form-control form-control-sm '  
+				           >{{ $row['langauge_proficiency'] }}</textarea> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Computer Literacy" class=" control-label col-md-4 text-left"> Computer Literacy </label>
+										<div class="col-md-6">
+										  <textarea name='computer_literacy' rows='5' id='computer_literacy' class='form-control form-control-sm '  
+				           >{{ $row['computer_literacy'] }}</textarea> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Personal Quality" class=" control-label col-md-4 text-left"> Personal Quality </label>
+										<div class="col-md-6">
+										  <textarea name='personal_quality' rows='5' id='personal_quality' class='form-control form-control-sm '  
+				           >{{ $row['personal_quality'] }}</textarea> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Ssc" class=" control-label col-md-4 text-left"> Ssc </label>
 										<div class="col-md-6">
 										  <textarea name='ssc' rows='5' id='ssc' class='form-control form-control-sm '  
 				           >{{ $row['ssc'] }}</textarea> 
@@ -143,7 +198,7 @@
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="HSC" class=" control-label col-md-4 text-left"> HSC </label>
+										<label for="Hsc" class=" control-label col-md-4 text-left"> Hsc </label>
 										<div class="col-md-6">
 										  <textarea name='hsc' rows='5' id='hsc' class='form-control form-control-sm '  
 				           >{{ $row['hsc'] }}</textarea> 
@@ -173,60 +228,20 @@
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Experience" class=" control-label col-md-4 text-left"> Experience </label>
+										<label for="Email" class=" control-label col-md-4 text-left"> Email </label>
 										<div class="col-md-6">
-										  <textarea name='experience' rows='5' id='experience' class='form-control form-control-sm '  
-				           >{{ $row['experience'] }}</textarea> 
+										  <input  type='text' name='email' id='email' value='{{ $row['email'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Training" class=" control-label col-md-4 text-left"> Training </label>
+										<label for="Mobile" class=" control-label col-md-4 text-left"> Mobile </label>
 										<div class="col-md-6">
-										  <textarea name='tanning' rows='5' id='tanning' class='form-control form-control-sm '  
-				           >{{ $row['tanning'] }}</textarea> 
-										 </div> 
-										 <div class="col-md-2">
-										 	
-										 </div>
-									  </div> 					
-									  <div class="form-group row  " >
-										<label for="Extra Curricular Activities" class=" control-label col-md-4 text-left"> Extra Curricular Activities </label>
-										<div class="col-md-6">
-										  <textarea name='extra_curricular_activities' rows='5' id='extra_curricular_activities' class='form-control form-control-sm '  
-				           >{{ $row['extra_curricular_activities'] }}</textarea> 
-										 </div> 
-										 <div class="col-md-2">
-										 	
-										 </div>
-									  </div> 					
-									  <div class="form-group row  " >
-										<label for="Hobbies" class=" control-label col-md-4 text-left"> Hobbies </label>
-										<div class="col-md-6">
-										  <textarea name='hobbies' rows='5' id='hobbies' class='form-control form-control-sm '  
-				           >{{ $row['hobbies'] }}</textarea> 
-										 </div> 
-										 <div class="col-md-2">
-										 	
-										 </div>
-									  </div> 					
-									  <div class="form-group row  " >
-										<label for="Langauge Proficiency" class=" control-label col-md-4 text-left"> Langauge Proficiency </label>
-										<div class="col-md-6">
-										  <textarea name='langauge_proficiency' rows='5' id='langauge_proficiency' class='form-control form-control-sm '  
-				           >{{ $row['langauge_proficiency'] }}</textarea> 
-										 </div> 
-										 <div class="col-md-2">
-										 	
-										 </div>
-									  </div> 					
-									  <div class="form-group row  " >
-										<label for="Computer Literacy" class=" control-label col-md-4 text-left"> Computer Literacy </label>
-										<div class="col-md-6">
-										  <textarea name='computer_literacy' rows='5' id='computer_literacy' class='form-control form-control-sm '  
-				           >{{ $row['computer_literacy'] }}</textarea> 
+										  <input  type='text' name='mobile' id='mobile' value='{{ $row['mobile'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -235,41 +250,23 @@
 									  <div class="form-group row  " >
 										<label for="Image" class=" control-label col-md-4 text-left"> Image </label>
 										<div class="col-md-6">
-										  
-						<div class="fileUpload btn " > 
-						    <span>  <i class="fa fa-camera"></i>  </span>
-						    <div class="title"> Browse File </div>
-						    <input type="file" name="image" class="upload"   accept="image/x-png,image/gif,image/jpeg"     />
-						</div>
-						<div class="image-preview preview-upload">
-							{!! SiteHelpers::showUploadedFile( $row["image"],"/uploads/images") !!}
-						</div>
-					 
+										  <input  type='text' name='image' id='image' value='{{ $row['image'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
-										<label for="Reference 1" class=" control-label col-md-4 text-left"> Reference 1 </label>
+										<label for="Reference" class=" control-label col-md-4 text-left"> Reference </label>
 										<div class="col-md-6">
-										  <textarea name='reference_1' rows='5' id='reference_1' class='form-control form-control-sm '  
-				           >{{ $row['reference_1'] }}</textarea> 
+										  <textarea name='reference' rows='5' id='reference' class='form-control form-control-sm '  
+				           >{{ $row['reference'] }}</textarea> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
 										 </div>
-									  </div> 					
-									  <div class="form-group row  " >
-										<label for="Reference 2" class=" control-label col-md-4 text-left"> Reference 2 </label>
-										<div class="col-md-6">
-										  <textarea name='reference_2' rows='5' id='reference_2' class='form-control form-control-sm '  
-				           >{{ $row['reference_2'] }}</textarea> 
-										 </div> 
-										 <div class="col-md-2">
-										 	
-										 </div>
-									  </div> {!! Form::hidden('job_post_id', $row['job_post_id']) !!}{!! Form::hidden('mailing_address', $row['mailing_address']) !!}{!! Form::hidden('permanent_address', $row['permanent_address']) !!}{!! Form::hidden('personal_quality', $row['personal_quality']) !!}{!! Form::hidden('status', $row['status']) !!}</fieldset></div>
+									  </div> </fieldset></div>
 
 			<div style="clear:both"></div>	
 				

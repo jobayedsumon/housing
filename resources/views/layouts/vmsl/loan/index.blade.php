@@ -171,7 +171,7 @@ input#newsletter {
                       <select class="form-control" name="loan_type">
                         @foreach($allData as $data)
                             <?php foreach(Helper::getLoanCategory() as $l):?>
-                            <option value="{{ $l->id }}" @if($data->id == $l->id) selected @endif>{{$l->name}}</option>
+                            <option value="{{ $l->name }}" @if($data->id == $l->id) selected @endif>{{$l->name}}</option>
                             <?php endforeach; ?>
                         @endforeach
                       </select>

@@ -47,7 +47,7 @@
                 <li><i class=""></i>&nbsp;<a href="/mission-vision">Mission & Vision</a></li>
                 <li><i class=""></i>&nbsp;<a href="/shareholding-structure">Shareholders</a></li>
                 <li class="has_drop" ><i class=""></i>&nbsp;
-                    <a href="javascript:void(0)">Board of Directors</a>
+                    <a href="/management-team?nav=bod">Board of Directors</a>
                     <ul class="child_element">
                         <li><i class=""></i>&nbsp;<a href="/management-team?nav=bod">Board of Directors</a></li>
                         <li><i class=""></i>&nbsp;<a href="/management-team?nav=ec">Executive Committee</a></li>

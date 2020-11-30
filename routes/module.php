@@ -75,11 +75,6 @@ Route::resource('deposits','DepositsController');
 // End Routes for deposits 
 
                     
-// Start Routes for career 
-Route::resource('career','CareerController');
-// End Routes for career 
-
-                    
 // Start Routes for popupslider 
 Route::resource('popupslider','PopupsliderController');
 // End Routes for popupslider 
@@ -103,5 +98,10 @@ Route::resource('contact','ContactController');
 // Start Routes for vacancyannouncement 
 Route::resource('vacancyannouncement','VacancyannouncementController');
 // End Routes for vacancyannouncement 
+
+                    
+// Start Routes for career 
+Route::resource('career','CareerController');
+// End Routes for career 
 
                     ?>

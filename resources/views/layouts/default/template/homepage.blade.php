@@ -139,19 +139,19 @@ $(document).ready(function(){
 <!-- I AM LOOKIN FOR End -->
 
 
-
+<div class="row customShed mt60">
+    <div class="col-12">
+        <div class="mb60 text-center section-title">
+            <!-- section title start-->
+            <h1>Find Loan Products We Offer</h1>
+            <p>We will match you with a loan program that meets your financial need. In short term liquidity, by striving to make funds available within the shortest possible time.</p>
+        </div>
+        <!-- /.section title start-->
+    </div>
+</div>
     <div class="section-space80">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="mb60 text-center section-title">
-                        <!-- section title start-->
-                        <h1>Find Loan Products We Offer</h1>
-                        <p>We will match you with a loan program that meets your financial need. In short term liquidity, by striving to make funds available <strong>within the shortest possible time.</strong></p>
-                    </div>
-                    <!-- /.section title start-->
-                </div>
-            </div>
+
             <div class="row">
                 <div class="service" id="service">
 
@@ -159,11 +159,11 @@ $(document).ready(function(){
 
 					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white service-block outline mb30">
-                            <div class="icon mb40">
+                            <div class="icon ">
                                 <a href="/loans/{{$loan->id}}"><img src="{{ asset('loan/'.$loan->icon) }}" alt="Loan Image" class="loan_thumbnail">
                                 </a>
                             </div>
-                            <div class="pinside40 pt-0">
+                            <div class="" style="padding-left: 5px">
                                 <h2><a href="/loans/{{$loan->id}}" class="title">{{ $loan->name }}</a></h2>
                                 <p>{{ $loan->short_description }}</p>
                                 <a href="/loans/{{$loan->id}}" class="btn-link">Read More</a> </div>
@@ -178,32 +178,33 @@ $(document).ready(function(){
     </div>
 
 
+<div class="row customShed">
+    <div class="col-12">
+        <div class="mb60 text-center section-title">
+            <!-- section title start-->
+            <h1>Find Deposit Scheme We Offer</h1>
+            <p>Save your valuable money today to have a better future tomorrow. You can choose from our deposit schemes where your money will be in safe hands to grow for your better future.</p>
+        </div>
+        <!-- /.section title start-->
+    </div>
+</div>
 
     <div class="section-space80">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="mb60 text-center section-title">
-                        <!-- section title start-->
-                        <h1>Find Deposit Scheme We Offer</h1>
-                        <p>Save your valuable money today to have a better future tomorrow. You can choose from our deposit schemes where your money will be in safe hands to grow for your better future.</p>
-                    </div>
-                    <!-- /.section title start-->
-                </div>
-            </div>
+
             <div class="row">
                 <div class="service" id="service">
 
 					@foreach (Helper::getHomepageDeposits() as $loan)
 
 					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white service-block outline mb30">
+                        <div class="bg-white service-block outline ">
                             <div class="icon mb40">
                                 <a href="/deposit-schemes/{{$loan->id}}">
                                     <img style="width:100%" src="{{ asset('uploads/images/'.$loan->thumbnail) }}" alt="Loan Image" class="loan_thumbnail">
                                 </a>
                             </div>
-                            <div class="pinside40 pt-0">
+                            <div class=" pt-0" style="padding-left: 5px">
                                 <h2><a href="/deposit-schemes/{{$loan->id}}" class="title">{{ $loan->name }}</a></h2>
                                 <p>{{ $loan->short_description }}</p>
                                 <a href="/deposit-schemes/{{$loan->id}}" class="btn-link">Read More</a> </div>

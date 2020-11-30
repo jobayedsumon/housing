@@ -168,26 +168,14 @@
 					</tr>
 				
 					<tr>
-						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Reference 1', (isset($fields['reference_1']['language'])? $fields['reference_1']['language'] : array())) }}</td>
-						<td>{{ $row->reference_1}} </td>
+						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Reference', (isset($fields['reference']['language'])? $fields['reference']['language'] : array())) }}</td>
+						<td>{{ $row->reference}} </td>
 						
 					</tr>
 				
 					<tr>
 						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Status', (isset($fields['status']['language'])? $fields['status']['language'] : array())) }}</td>
 						<td>{{ $row->status}} </td>
-						
-					</tr>
-				
-					<tr>
-						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Reference 2', (isset($fields['reference_2']['language'])? $fields['reference_2']['language'] : array())) }}</td>
-						<td>{{ $row->reference_2}} </td>
-						
-					</tr>
-				
-					<tr>
-						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Experience', (isset($fields['experience']['language'])? $fields['experience']['language'] : array())) }}</td>
-						<td>{{ $row->experience}} </td>
 						
 					</tr>
 						

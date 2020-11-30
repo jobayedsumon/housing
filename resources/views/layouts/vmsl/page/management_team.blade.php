@@ -59,7 +59,7 @@
                 <div class="member_dialuge_preview">
                     <h5>{{$t->representing}}</h5>
                     @php
-                        $message = strip_tags($t->message);
+                        $message = strip_tags(html_entity_decode($t->message));
                     @endphp
                     <div class="message">{{ \Illuminate\Support\Str::limit($message, 300, ' . . . ') }}</div>
                 </div>
