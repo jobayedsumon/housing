@@ -50,7 +50,7 @@ class Vmsl extends Model {
   }
 
     public static function managementTeam(){
-        $value = DB::table('vmsl_management_team')->where('status', 1)->get();
+        $value = DB::table('vmsl_management_team')->where('status', 1)->orderBy('priority', 'ASC')->get();
         return $value;
     }
     public static function managementTeamType(){
@@ -59,7 +59,7 @@ class Vmsl extends Model {
     }
 
     public static function documents($document_type){
-      $value = DB::table('vmsl_documents')->where('document_type',$document_type)->orderby('month','desc')->get();
+      $value = DB::table('vmsl_documents')->where('document_type',$document_type)->orderBy('month','desc')->get();
       return $value;
   }
   public static function strategic_partners(){

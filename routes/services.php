@@ -15,11 +15,6 @@ Route::resource('services/teamtype','Services\TeamtypeController');
 // End Routes for teamtype 
 
                     
-// Start Routes for managementteaminformation 
-Route::resource('services/managementteaminformation','Services\ManagementteaminformationController');
-// End Routes for managementteaminformation 
-
-                    
 // Start Routes for loaninformation 
 Route::resource('services/loaninformation','Services\LoaninformationController');
 // End Routes for loaninformation 
@@ -98,5 +93,10 @@ Route::resource('services/vacancyannouncement','Services\VacancyannouncementCont
 // Start Routes for career 
 Route::resource('services/career','Services\CareerController');
 // End Routes for career 
+
+                    
+// Start Routes for managementteaminformation 
+Route::resource('services/managementteaminformation','Services\ManagementteaminformationController');
+// End Routes for managementteaminformation 
 
                     ?>

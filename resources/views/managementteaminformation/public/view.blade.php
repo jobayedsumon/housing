@@ -49,13 +49,19 @@
 				
 					<tr>
 						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Type', (isset($fields['type']['language'])? $fields['type']['language'] : array())) }}</td>
-						<td>{{ SiteHelpers::formatLookUp($row->type,'type','1:vmsl_team_type:id:name') }} </td>
+						<td>{{ $row->type}} </td>
 						
 					</tr>
 				
 					<tr>
 						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Status', (isset($fields['status']['language'])? $fields['status']['language'] : array())) }}</td>
-						<td>{{ SiteHelpers::formatLookUp($row->status,'status','1:vmsl_status:id:name') }} </td>
+						<td>{{ $row->status}} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Priority', (isset($fields['priority']['language'])? $fields['priority']['language'] : array())) }}</td>
+						<td>{{ $row->priority}} </td>
 						
 					</tr>
 						

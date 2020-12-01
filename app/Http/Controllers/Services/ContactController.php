@@ -4,54 +4,54 @@ use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator as Paginator;
-use Validator, Input, Redirect ; 
+use Validator, Input, Redirect ;
 
 
 class ContactController extends Controller {
 
 	protected $layout = "layouts.main";
-	protected $data = array();	
+	protected $data = array();
 	public $module = 'contact';
 	static $per_page	= '50';
 
 	public function __construct()
-	{		
+	{
 		parent::__construct();
-		$this->model = new Contact();	
-		
-		$this->info = $this->model->makeInfo( $this->module);	
+		$this->model = new Contact();
+
+		$this->info = $this->model->makeInfo( $this->module);
 		$this->data = array(
 			'pageTitle'	=> 	$this->info['title'],
 			'pageNote'	=>  $this->info['note'],
 			'pageModule'=> 'contact',
 			'return'	=> self::returnUrl()
-			
+
 		);
-		
+
 	}
 
 	public function index( Request $request )
 	{
-		// Make Sure users Logged 			
-		$this->grabApi( $request , 'api') ;		
-		if($this->access['is_view'] ==0) 
+		// Make Sure users Logged
+		$this->grabApi( $request , 'api') ;
+		if($this->access['is_view'] ==0)
 			 return response()->json(array('status'=>'error' , 'data' =>  __('core.note_restric') ));
-		// Render into json 
+		// Render into json
 		 return response()->json(array('status'=>'success' , 'data' => (array) $this->data ));
-	}	
+	}
 
-	function create( Request $request , $id =0 ) 
+	function create( Request $request , $id =0 )
 	{
 		$this->hook( $request  );
-		if($this->access['is_add'] ==0) 
+		if($this->access['is_add'] ==0)
 			return redirect('dashboard')->with('message', __('core.note_restric'))->with('status','error');
 
-		$this->data['row'] = $this->model->getColumnTable( $this->info['table']); 
-		
+		$this->data['row'] = $this->model->getColumnTable( $this->info['table']);
+
 		$this->data['id'] = '';
 		return response()->json(array('status'=>'success' , 'data' => $this->data ));
 	}
-	function edit( Request $request , $id ) 
+	function edit( Request $request , $id )
 	{
 		$this->hook( $request , $id );
 		if(!isset($this->data['row']))
@@ -61,11 +61,11 @@ class ContactController extends Controller {
 			return response()->json(array('status'=>'error' , 'message' => __('core.note_restric') ));
 
 		$this->data['row'] = (array) $this->data['row'];
-		
+
 		$this->data['id'] = $id;
 		return response()->json(array('status'=>'success' , 'data' => $this->data ));
-	}	
-	function show( Request $request , $id ) 
+	}
+	function show( Request $request , $id )
 	{
 		/* Handle import , export and view */
 		$task =$id ;
@@ -91,11 +91,11 @@ class ContactController extends Controller {
 				if(!isset($this->data['row']))
 					return response()->json(array('status'=>'error' , 'message' => 'Record Not Found !' ));
 
-				if($this->access['is_detail'] ==0) 
+				if($this->access['is_detail'] ==0)
 					return response()->json(array('status'=>'error' , 'message' => __('core.note_restric') ));
 
 				return response()->json(array('status'=>'success' , 'data' => $this->data ));
-				break;		
+				break;
 		}
 	}
 	function store( Request $request  )
@@ -106,15 +106,15 @@ class ContactController extends Controller {
 			default:
 				$rules = $this->validateForm();
 				$validator = Validator::make($request->all(), $rules);
-				if ($validator->passes()) 
+				if ($validator->passes())
 				{
 					$data = $this->validatePost( $request );
 					$id = $this->model->insertRow($data , $request->input( $this->info['key']));
-					
+
 					/* Insert logs */
 					$this->model->logs($request , $id);
 					return response()->json( ['status'=> 'success','message' => __('core.note_success') ] );
-				} 
+				}
 				else {
 					return response()->json( ['status'=> 'error','message' => __('core.note_error') ] );
 
@@ -133,34 +133,34 @@ class ContactController extends Controller {
 			case 'copy':
 				$result = $this->copy( $request );
 				return response()->json(array('status'=>'success'  ));
-				break;		
-		}	
-	
-	}	
+				break;
+		}
+
+	}
 
 	public function destroy( $request)
 	{
-		// Make Sure users Logged 
-		if(!\Auth::check()) 
+		// Make Sure users Logged
+		if(!\Auth::check())
 			return ['message'=>__('core.note_restric'),'status'=>'error'];
-			
+
 
 		$this->access = $this->model->validAccess($this->info['id'] , session('gid'));
 		if($this->access['is_remove'] ==0)
-			return ['message'=>__('core.note_restric'),'status'=>'error']; 
-			
-		// delete multipe rows 
+			return ['message'=>__('core.note_restric'),'status'=>'error'];
+
+		// delete multipe rows
 		if(count($request->input('ids')) >=1)
 		{
 			$this->model->destroy($request->input('ids'));
-			
+
 			\SiteHelpers::auditTrail( $request , "ID : ".implode(",",$request->input('ids'))."  , Has Been Removed Successfull");
 			// redirect
-        	return ['message'=>__('core.note_success_delete'),'status'=>'success'];	
-	
+        	return ['message'=>__('core.note_success_delete'),'status'=>'success'];
+
 		} else {
-			return ['message'=>__('No Item Deleted'),'status'=>'error'];				
+			return ['message'=>__('No Item Deleted'),'status'=>'error'];
 		}
 
-	}		
+	}
 }

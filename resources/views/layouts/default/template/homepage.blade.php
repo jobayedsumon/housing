@@ -3,10 +3,10 @@
 @section('title', 'Home')
 
 
-    <div class="slider" id="slider">
+    <div class="slider" id="slider" style="padding-top: 100px">
         @foreach($slider as $data)
             <a href="{{ $data->button_link }}">
-                <img src="{{ asset('slider/'.$data->image) }}" alt="{{ $data->sub_title }}" class="">
+                <img src="{{ asset('slider/'.$data->image) }}" alt="{{ $data->sub_title }}" >
             </a>
         @endforeach
     </div>

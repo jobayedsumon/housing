@@ -50,8 +50,8 @@
 									  <div class="form-group row  " >
 										<label for="Message" class=" control-label col-md-4 text-left"> Message </label>
 										<div class="col-md-6">
-										  <textarea name='message' rows='5' id='editor' class='form-control form-control-sm editor '  
-						 >{{ $row['message'] }}</textarea> 
+										  <input  type='text' name='message' id='message' value='{{ $row['message'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -60,25 +60,18 @@
 									  <div class="form-group row  " >
 										<label for="Image" class=" control-label col-md-4 text-left"> Image </label>
 										<div class="col-md-6">
-										  
-						<div class="fileUpload btn " > 
-						    <span>  <i class="fa fa-camera"></i>  </span>
-						    <div class="title"> Browse File </div>
-						    <input type="file" name="image" class="upload"   accept="image/x-png,image/gif,image/jpeg"     />
-						</div>
-						<div class="image-preview preview-upload">
-							{!! SiteHelpers::showUploadedFile( $row["image"],"/uploads/images") !!}
-						</div>
-					 
+										  <input  type='text' name='image' id='image' value='{{ $row['image'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
-										 	<a href="#" data-toggle="tooltip" placement="left" class="tips" title="Image Size 390*480"><i class="icon-question2"></i></a>
+										 	
 										 </div>
 									  </div> 					
 									  <div class="form-group row  " >
 										<label for="Type" class=" control-label col-md-4 text-left"> Type </label>
 										<div class="col-md-6">
-										  <select name='type' rows='5' id='type' class='select2 '   ></select> 
+										  <input  type='text' name='type' id='type' value='{{ $row['type'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -87,7 +80,18 @@
 									  <div class="form-group row  " >
 										<label for="Status" class=" control-label col-md-4 text-left"> Status </label>
 										<div class="col-md-6">
-										  <select name='status' rows='5' id='status' class='select2 '   ></select> 
+										  <input  type='text' name='status' id='status' value='{{ $row['status'] }}' 
+						     class='form-control form-control-sm ' /> 
+										 </div> 
+										 <div class="col-md-2">
+										 	
+										 </div>
+									  </div> 					
+									  <div class="form-group row  " >
+										<label for="Priority" class=" control-label col-md-4 text-left"> Priority </label>
+										<div class="col-md-6">
+										  <input  type='text' name='priority' id='priority' value='{{ $row['priority'] }}' 
+						     class='form-control form-control-sm ' /> 
 										 </div> 
 										 <div class="col-md-2">
 										 	
@@ -111,12 +115,6 @@
    <script type="text/javascript">
 	$(document).ready(function() { 
 		
-		
-		$("#type").jCombo("{!! url('managementteaminformation/comboselect?filter=vmsl_team_type:id:name') !!}",
-		{  selected_value : '{{ $row["type"] }}' });
-		
-		$("#status").jCombo("{!! url('managementteaminformation/comboselect?filter=vmsl_status:id:name') !!}",
-		{  selected_value : '{{ $row["status"] }}' });
 		 
 
 		$('.removeCurrentFiles').on('click',function(){
