@@ -27,7 +27,7 @@
     background-color: #ffffff91!important;
 }
 .small, small {color: #007ec4;font-weight: bold;}
-a:hover{color:#e01f27 !important;}
+a:hover{color:#e01f27;}
 .page-title {text-transform: uppercase;color: #000;}
 .btn-default:hover {
     color: #fff !important;
@@ -67,7 +67,8 @@ span.adds {
 }
 
 .nav>li>a:hover {
-    background-color: #007ec4;
+    background-color: #007BC0;
+    color: #fff;
 }
 
 .dropdown-content {
@@ -1193,13 +1194,13 @@ a.search-btn,a.search-btn:active {
     line-height: 1.428571429;
     color: black;
     white-space: normal;
-    border: 1px solid #0077bf;
+    border: 1px solid #007BC0;
     margin-right: 5px;
 }
 .mega-dropdown-menu > li ul > li > a:hover, .mega-dropdown-menu > li ul > li > a:focus {
     text-decoration: none;
-    color: red;
-    background-color: #007ec4;
+    color: #fff;
+    background-color: #007BC0;
 }
 .mega-dropdown-menu .dropdown-header {
     color: #428bca;

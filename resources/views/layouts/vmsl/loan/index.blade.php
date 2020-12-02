@@ -152,7 +152,7 @@ input#newsletter {
 
 
  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal" role="dialog" style="padding-top: 100px">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
